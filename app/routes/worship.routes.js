@@ -26,4 +26,4 @@ module.exports = app => {
   
     app.use('/api/worship', router);
   };
-  
+    

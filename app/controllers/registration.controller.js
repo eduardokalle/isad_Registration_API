@@ -17,6 +17,7 @@ exports.create = (req, res) => {
     cedula: req.body.cedula,
     nombre: req.body.nombre,
     apellido: req.body.apellido,
+    fecha : req.body.fecha,
     iglesia: req.body.iglesia,
     culto: req.body.culto,
   };

@@ -17,20 +17,20 @@ exports.create = (req, res) => {
     session: req.body.session,
     descripcion: req.body.descripcion,
     estado: req.body.estado,
-    fecha: req.body.fecha,
+    fecha: req.body.fecha,    
   };
 
   // Save Tutorial in the database
   Worship.create(worship)
     .then(data => {
       res.send(data && {
-          message : "Se creo correctamente el registro gracias te esperamos"
+          message : "Se creo correctamente el culto."
       });
     })
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Ocurrió algún error al crear el registro."
+          err.message || "Ocurrió algún error al crear el culto."
       });
     });
 };
