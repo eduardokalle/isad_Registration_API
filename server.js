@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:6000"
+  origin: "https://iasdregistro.netlify.app"
 };
 
 app.use(cors(corsOptions));

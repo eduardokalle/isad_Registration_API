@@ -17,7 +17,8 @@ exports.create = (req, res) => {
     session: req.body.session,
     descripcion: req.body.descripcion,
     estado: req.body.estado,
-    fecha: req.body.fecha,    
+    fecha: req.body.fecha,
+    capacidad: req.body.capacidad,     
   };
 
   // Save Tutorial in the database
